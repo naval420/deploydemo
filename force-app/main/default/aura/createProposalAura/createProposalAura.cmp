@@ -1,0 +1,5 @@
+<aura:component implements="lightning:isUrlAddressable,force:hasRecordId,lightning:actionOverride,lightning:hasPageReference,flexipage:availableForRecordHome" controller="CreateProposalController">
+      <aura:attribute name="recordId" type="String" />
+      <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+      <c:createProposal isModalOpen="true" recordId='{!v.recordId}' aura:id="childCmp"></c:createProposal>
+</aura:component>

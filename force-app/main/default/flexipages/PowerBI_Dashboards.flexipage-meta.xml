@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>frameBorder</name>
+                    <value>0</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>height</name>
+                    <value>500px</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>iframeUrl</name>
+                    <value>https://app.powerbi.com/reportEmbed?reportId=c50387cf-3f6a-46a1-a8b1-11e4db554a17&amp;autoAuth=true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sandbox</name>
+                    <value>allow-same-origin allow-scripts allow-forms</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>scrolling</name>
+                    <value>auto</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>style</name>
+                    <value>border: none; overflow: scroll;</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>width</name>
+                    <value>100%</value>
+                </componentInstanceProperties>
+                <componentName>powerBIiFrame</componentName>
+                <identifier>c_powerBIiFrame1</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>frameBorder</name>
+                    <value>0</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>height</name>
+                    <value>500px</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>iframeUrl</name>
+                    <value>https://app.powerbi.com/reportEmbed?reportId=c50387cf-3f6a-46a1-a8b1-11e4db554a17&amp;autoAuth=true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sandbox</name>
+                    <value>allow-same-origin allow-scripts allow-forms</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>scrolling</name>
+                    <value>auto</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>style</name>
+                    <value>border: none; overflow: scroll;</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>width</name>
+                    <value>100%</value>
+                </componentInstanceProperties>
+                <componentName>powerBIiFrame</componentName>
+                <identifier>c_powerBIiFrame2</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>main</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>PowerBI Dashboards</masterLabel>
+    <template>
+        <name>flexipage:defaultAppHomeTemplate</name>
+    </template>
+    <type>AppPage</type>
+</FlexiPage>

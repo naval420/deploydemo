@@ -1,0 +1,7 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" >
+ 
+
+<div class="slds-align_absolute-center"><img src="{!$Resource.Budget_Class_Step_1}"/></div>
+ 
+
+</aura:component>

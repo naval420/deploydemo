@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>decorate</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>richTextValue</name>
+                    <value>&lt;p&gt;&lt;strong style=&quot;font-size: 22px; color: rgb(0, 0, 0);&quot;&gt;Superawesome AccountManagement Home&lt;/strong&gt;&lt;strong style=&quot;font-size: 20px; color: rgb(0, 0, 0);&quot;&gt;&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:richText</componentName>
+                <identifier>flexipage_richText</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>frameBorder</name>
+                    <value>0</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>height</name>
+                    <value>720px</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>iframeUrl</name>
+                    <value>https://app.powerbi.com/reportEmbed?reportId=17cb5332-2028-4ddd-8973-6218c359b6dd&amp;autoAuth=true&amp;ctid=3886c803-b510-4720-abae-135dd8392916</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sandbox</name>
+                    <value>allow-same-origin allow-scripts allow-forms allow-popups</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>scrolling</name>
+                    <value>auto</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>style</name>
+                    <value>border: none; overflow: scroll;</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>width</name>
+                    <value>100%</value>
+                </componentInstanceProperties>
+                <componentName>powerBIiFrame</componentName>
+                <identifier>powerBIiFrame</identifier>
+                <visibilityRule>
+                    <booleanFilter>(1 AND 2 )OR 3</booleanFilter>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Account Management</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.UserRole.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Superawesome EMEA</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>System Administrator</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>frameBorder</name>
+                    <value>0</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>height</name>
+                    <value>720px</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>iframeUrl</name>
+                    <value>https://app.powerbi.com/reportEmbed?reportId=b1ca9657-9680-45c2-a030-2ec730157be8&amp;autoAuth=true&amp;ctid=3886c803-b510-4720-abae-135dd8392916</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sandbox</name>
+                    <value>allow-same-origin allow-scripts allow-forms allow-popups</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>scrolling</name>
+                    <value>auto</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>style</name>
+                    <value>border: none; overflow: scroll;</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>width</name>
+                    <value>100%</value>
+                </componentInstanceProperties>
+                <componentName>powerBIiFrame</componentName>
+                <identifier>c_powerBIiFrame</identifier>
+                <visibilityRule>
+                    <booleanFilter>(1 AND 2) OR 3</booleanFilter>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Account Management</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.UserRole.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Superawesome EMEA</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>System Administrator</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>frameBorder</name>
+                    <value>0</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>height</name>
+                    <value>720px</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>iframeUrl</name>
+                    <value>https://app.powerbi.com/reportEmbed?reportId=17384ae3-615f-4a10-b753-ee154cea4eee&amp;autoAuth=true&amp;ctid=3886c803-b510-4720-abae-135dd8392916</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sandbox</name>
+                    <value>allow-same-origin allow-scripts allow-forms allow-popups</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>scrolling</name>
+                    <value>auto</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>style</name>
+                    <value>border: none; overflow: scroll;</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>width</name>
+                    <value>100%</value>
+                </componentInstanceProperties>
+                <componentName>powerBIiFrame</componentName>
+                <identifier>c_powerBIiFrame2</identifier>
+                <visibilityRule>
+                    <booleanFilter>(1 AND 2) OR 3</booleanFilter>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Account Management</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.UserRole.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Superawesome EMEA</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>System Administrator</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>frameBorder</name>
+                    <value>0</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>height</name>
+                    <value>720px</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>iframeUrl</name>
+                    <value>https://app.powerbi.com/reportEmbed?reportId=d7b03f08-8b13-432b-ac96-94081c36e87f&amp;autoAuth=true&amp;ctid=3886c803-b510-4720-abae-135dd8392916</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sandbox</name>
+                    <value>allow-same-origin allow-scripts allow-forms allow-popups</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>scrolling</name>
+                    <value>auto</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>style</name>
+                    <value>border: none; overflow: scroll;</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>width</name>
+                    <value>100%</value>
+                </componentInstanceProperties>
+                <componentName>powerBIiFrame</componentName>
+                <identifier>c_powerBIiFrame3</identifier>
+                <visibilityRule>
+                    <booleanFilter>(1 AND 2) OR 3</booleanFilter>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Account Management</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.UserRole.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Superawesome Global</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>System Administrator</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>frameBorder</name>
+                    <value>0</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>height</name>
+                    <value>720px</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>iframeUrl</name>
+                    <value>https://app.powerbi.com/reportEmbed?reportId=0497c40b-1375-4361-b6f6-e8d08c283ef2&amp;autoAuth=true&amp;ctid=3886c803-b510-4720-abae-135dd8392916</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sandbox</name>
+                    <value>allow-same-origin allow-scripts allow-forms allow-popups</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>scrolling</name>
+                    <value>auto</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>style</name>
+                    <value>border: none; overflow: scroll;</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>width</name>
+                    <value>100%</value>
+                </componentInstanceProperties>
+                <componentName>powerBIiFrame</componentName>
+                <identifier>c_powerBIiFrame4</identifier>
+                <visibilityRule>
+                    <booleanFilter>(1 AND 2) OR 3</booleanFilter>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Account Management</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.UserRole.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Superawesome Global</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>System Administrator</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>frameBorder</name>
+                    <value>0</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>height</name>
+                    <value>720px</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>iframeUrl</name>
+                    <value>https://app.powerbi.com/reportEmbed?reportId=09421b65-9f6a-406b-8f50-a3433ab04f29&amp;autoAuth=true&amp;ctid=3886c803-b510-4720-abae-135dd8392916</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sandbox</name>
+                    <value>allow-same-origin allow-scripts allow-forms</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>scrolling</name>
+                    <value>auto</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>style</name>
+                    <value>border: none; overflow: scroll;</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>width</name>
+                    <value>100%</value>
+                </componentInstanceProperties>
+                <componentName>powerBIiFrame</componentName>
+                <identifier>c_powerBIiFrame5</identifier>
+                <visibilityRule>
+                    <booleanFilter>(1 AND 2) OR 3</booleanFilter>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Account Management</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.UserRole.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Superawesome Global</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>System Administrator</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>frameBorder</name>
+                    <value>0</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>height</name>
+                    <value>720px</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>iframeUrl</name>
+                    <value>https://app.powerbi.com/reportEmbed?reportId=4d2d80cf-ccce-4489-9b1e-4395895d3cbf&amp;autoAuth=true&amp;ctid=3886c803-b510-4720-abae-135dd8392916</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sandbox</name>
+                    <value>allow-same-origin allow-scripts allow-forms</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>scrolling</name>
+                    <value>auto</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>style</name>
+                    <value>border: none; overflow: scroll;</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>width</name>
+                    <value>100%</value>
+                </componentInstanceProperties>
+                <componentName>powerBIiFrame</componentName>
+                <identifier>c_powerBIiFrame6</identifier>
+                <visibilityRule>
+                    <booleanFilter>(1 AND 2) OR 3</booleanFilter>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Account Management</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.UserRole.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Superawesome NA</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>System Administrator</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>frameBorder</name>
+                    <value>0</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>height</name>
+                    <value>720px</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>iframeUrl</name>
+                    <value>https://app.powerbi.com/reportEmbed?reportId=e7f75970-2d4e-44c5-b03a-d499e19fc7f9&amp;autoAuth=true&amp;ctid=3886c803-b510-4720-abae-135dd8392916</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sandbox</name>
+                    <value>allow-same-origin allow-scripts allow-forms</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>scrolling</name>
+                    <value>auto</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>style</name>
+                    <value>border: none; overflow: scroll;</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>width</name>
+                    <value>100%</value>
+                </componentInstanceProperties>
+                <componentName>powerBIiFrame</componentName>
+                <identifier>c_powerBIiFrame7</identifier>
+                <visibilityRule>
+                    <booleanFilter>(1 AND 2) OR 3</booleanFilter>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Account Management</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.UserRole.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Superawesome NA</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>System Administrator</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>frameBorder</name>
+                    <value>0</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>height</name>
+                    <value>720px</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>iframeUrl</name>
+                    <value>https://app.powerbi.com/reportEmbed?reportId=c8f202b0-16b1-4c10-8399-b38a39a22cce&amp;autoAuth=true&amp;ctid=3886c803-b510-4720-abae-135dd8392916</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sandbox</name>
+                    <value>allow-same-origin allow-scripts allow-forms</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>scrolling</name>
+                    <value>auto</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>style</name>
+                    <value>border: none; overflow: scroll;</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>width</name>
+                    <value>100%</value>
+                </componentInstanceProperties>
+                <componentName>powerBIiFrame</componentName>
+                <identifier>c_powerBIiFrame8</identifier>
+                <visibilityRule>
+                    <booleanFilter>(1 AND 2) OR 3</booleanFilter>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Account Management</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.UserRole.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Superawesome NA</rightValue>
+                    </criteria>
+                    <criteria>
+                        <leftValue>{!$User.Profile.Name}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>System Administrator</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>dashboardName</name>
+                    <value>ZhNhbeOSVYIqDFpsnGKxvnQmLjLOUX</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>hideOnError</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentName>desktopDashboards:embeddedDashboard</componentName>
+                <identifier>desktopDashboards_embeddedDashboard</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>main</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>Account Management</masterLabel>
+    <template>
+        <name>runtime_commerce_oci:homeTemplateOneRegion</name>
+    </template>
+    <type>HomePage</type>
+</FlexiPage>

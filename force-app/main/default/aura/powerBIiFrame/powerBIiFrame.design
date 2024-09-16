@@ -1,0 +1,9 @@
+<design:component label="powerBI iFrame Component">
+    <design:attribute name="iframeUrl" label="Source URL (HTTPS only)" default="https://app.powerbi.com/reportEmbed?reportId=c50387cf-3f6a-46a1-a8b1-11e4db554a17&amp;autoAuth=true"/>
+    <design:attribute name="width" label="Width" default="100%"/>
+    <design:attribute name="height" label="Height" default="500px"/>
+    <design:attribute name="style" label="Style" default="border: none; overflow: scroll;"/>
+    <design:attribute name="scrolling" label="Scrolling" default="auto"/>
+    <design:attribute name="frameBorder" label="Frame Border" default="0"/>
+    <design:attribute name="sandbox" label="Frame Border" default="allow-same-origin allow-scripts allow-forms"/>
+</design:component>

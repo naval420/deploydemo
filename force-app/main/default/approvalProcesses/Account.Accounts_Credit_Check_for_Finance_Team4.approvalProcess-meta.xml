@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <allowRecall>false</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Owner</field>
+        <field>ShippingAddress</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>gayatri@superawesome.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>michael.almeida@cloudshiftgroup.com.superawesome</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <criteriaItems>
+                <field>Account.ShippingCountry</field>
+                <operation>equals</operation>
+                <value>United Kingdom</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Credit Check</label>
+        <name>Approve_Reject_the_request</name>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>gayatri@superawesome.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>michael.almeida@cloudshiftgroup.com.superawesome</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <criteriaItems>
+                <field>Account.ShippingCountry</field>
+                <operation>equals</operation>
+                <value>United States</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Credit Check</label>
+        <name>Trading_Country_is_USA</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>gayatri@superawesome.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>michael.almeida@cloudshiftgroup.com.superawesome</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <booleanFilter>1 AND 2</booleanFilter>
+            <criteriaItems>
+                <field>Account.ShippingCountry</field>
+                <operation>notEqual</operation>
+                <value>United Kingdom</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Account.ShippingCountry</field>
+                <operation>notEqual</operation>
+                <value>United States</value>
+            </criteriaItems>
+        </entryCriteria>
+        <label>Credit Check</label>
+        <name>Trading_Country_is_not_UK_or_USA</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <description>Verification to be done by Finance Team</description>
+    <emailTemplate>SuperAwesome_Email_Templates/Credit_Approval_by_Finance_Team</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <field>Account.Reviewed_by_Finance_Team__c</field>
+            <operation>notEqual</operation>
+            <value>In Review,Approved</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.RecordType</field>
+            <operation>notEqual</operation>
+            <value>Supplier/Vendor</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Credit_Check_Approved_for_the_Account</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Reviewed_by_Finance_Team_Approved</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Credit_Check_Rejected_for_the_Account</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Reviewed_by_Finance_Team_Rejected</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Reviewed_by_Finance_Team_In_Review</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>Accounts Credit Check for Finance Team4</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <processOrder>1</processOrder>
+    <recordEditability>AdminOrCurrentApprover</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>
